@@ -1,21 +1,60 @@
+.tab-content {
+    background-color:rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .nav-link {
     display: inline-block;
-    width: 100%;
-    padding: 15px 75px ;
-    margin: 50px 0px;
+    width: auto;
+    padding: 15px 45px ;
+    margin: 40px 0px;
     text-align: center;
     background-color: rgb(235, 105, 18);
     color: black;
     font: italic small-caps bold 25px 'Permanent Marker', 'Press Start 2P', serif;
+
 }
 
-#videos {
+.nav-link:hover {
+    background-color:rgb(175, 175, 175);
+    color:rgb(0, 0, 0)
+}
+
+div.progress{
+    background-color: rgb(0, 0, 0);
+    color:rgb(235, 105, 18);
+}
+
+#videos, #skills {
     padding: 50px;
-    background-color: rgb(194, 191, 191);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     text-align: center;
 }
 
 iframe {
     padding: 10px;
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker'; 
+    text-align: center;
+    width: auto;
+}
+
+.progress {
+    height: 30px;
+    margin: 25px;
+}
+
+.nav-link.active {
+    background-color: black;
+    color: rgb(235, 105, 18);
+}
+
+.header {
+    margin: 0;
 }

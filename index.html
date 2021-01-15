@@ -10,31 +10,46 @@
 </head>
 <body>
   <div class="d-flex align-items-start">
-    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-      <a class="nav-link" id="v-pills-about-tab" data-bs-toggle="pill" href="#v-pills-about" role="tab" aria-controls="v-pills-about" aria-selected="false">About</a>
-      <a class="nav-link" id="v-pills-videos-tab" data-bs-toggle="pill" href="#v-pills-videos" role="tab" aria-controls="v-pills-videos" aria-selected="false">Videos</a>
-      <a class="nav-link" id="v-pills-skills-tab" data-bs-toggle="pill" href="#v-pills-skills" role="tab" aria-controls="v-pills-skills" aria-selected="false">Skills</a>
-      <a class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</a>
+    <div class="nav flex-column" id="v-tab" role="tablist" aria-orientation="vertical">
+      <h1>EJ Brown</h1>
+      <a class="nav-link active" id="v-home-tab" data-bs-toggle="pill" href="#v-home" role="tab" aria-controls="v-home" aria-selected="true">Home</a>
+      <a class="nav-link" id="v-about-tab" data-bs-toggle="pill" href="#v-about" role="tab" aria-controls="v-about" aria-selected="false">About</a>
+      <a class="nav-link" id="v-videos-tab" data-bs-toggle="pill" href="#v-videos" role="tab" aria-controls="v-videos" aria-selected="false">Videos</a>
+      <a class="nav-link" id="v-skills-tab" data-bs-toggle="pill" href="#v-skills" role="tab" aria-controls="v-skills" aria-selected="false">Skills</a>
+      <a class="nav-link" id="v-contact-tab" data-bs-toggle="pill" href="#v-contact" role="tab" aria-controls="v-contact" aria-selected="false">Contact</a>
     </div>
-    <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-content" id="v-tabContent">
       <!-- Home -->
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      <div class="tab-pane fade show active" id="v-home" role="tabpanel" aria-labelledby="v-home-tab">
           My name is E.Jay 
       </div>
-      <div class="tab-pane fade" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">I have fine wife who loves the Lord too</div>
+      <div class="tab-pane fade" id="v-about" role="tabpanel" aria-labelledby="v-about-tab">I have fine wife who loves the Lord too</div>
       <!-- Video Section -->
-      <div class="tab-pane fade" id="v-pills-videos" role="tabpanel" aria-labelledby="v-pills-videos-tab">
-        <h2 style="font-family: 'Permanent Marker'; text-align: center;">Videos of me preachin' the Word of God</h2>
+      <div class="tab-pane fade" id="v-videos" role="tabpanel" aria-labelledby="v-videos-tab">
+        <h2>Videos of me preachin' the Word of God</h2>
         <section id="videos">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/B0kJYqbNZSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/_L8YWRl-YpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/j9jVM10PnnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/s59PWydz6u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
+        </section>
       </div>
-      <div class="tab-pane fade" id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">I mean... doing my thang </div>
-      <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">call Katy</div>
+      <!-- Skills Progress Bars -->
+      <div class="tab-pane fade" id="v-skills" role="tabpanel" aria-labelledby="v-skills-tab"> 
+        <h2>Skills</h2>
+        <section id="skills">
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Preachin'</div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Steadiness</div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Loving kindness</div>
+          </div>
+        </section>
+      </div>
+      <div class="tab-pane fade" id="v-contact" role="tabpanel" aria-labelledby="v-contact-tab">call Katy</div>
     </div>
   </div>
 
