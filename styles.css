@@ -1,0 +1,21 @@
+.nav-link {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 75px ;
+    margin: 50px 0px;
+    text-align: center;
+    background-color: rgb(235, 105, 18);
+    color: black;
+    font: italic small-caps bold 25px 'Permanent Marker', 'Press Start 2P', serif;
+}
+
+#videos {
+    padding: 50px;
+    background-color: rgb(194, 191, 191);
+    width: 100%;
+    text-align: center;
+}
+
+iframe {
+    padding: 10px;
+}
