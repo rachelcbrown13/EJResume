@@ -19,22 +19,53 @@
       <a class="nav-link" id="v-contact-tab" data-bs-toggle="pill" href="#v-contact" role="tab" aria-controls="v-contact" aria-selected="false">Contact</a>
     </div>
     <div class="tab-content" id="v-tabContent">
-      <!-- Home -->
+<!-- Home -->
       <div class="tab-pane fade show active" id="v-home" role="tabpanel" aria-labelledby="v-home-tab">
-          My name is E.Jay 
+        <video autoplay muted loop id="HomeVideo">
+          <source src="HomeVideo.mov" type="video/mp4">
+        </video>
       </div>
-      <div class="tab-pane fade" id="v-about" role="tabpanel" aria-labelledby="v-about-tab">I have fine wife who loves the Lord too</div>
-      <!-- Video Section -->
+<!-- About -->
+      <div class="tab-pane fade" id="v-about" role="tabpanel" aria-labelledby="v-about-tab">
+        <section class="grid-container">
+          <div class="grid-item-1">
+            <h2>Who am I?</h2>
+            <p>Not growing up in a Christian home, I was unaware of the everlasting impact Jesus Christ could have on my life. I have a passion to teach people to be leaders and not be ashamed of who God created them to be. I am of the belief that my life is ministry; I aspire to disciple and demonstrate the love of God through my interactions with the ones around me. When I go out to eat with my wife, playing recreational sports or working out at the gym, I am constantly thinking of how the Lord is trying to reach someone. I have a desire for people to know who their creator is and how much He truly desires and loves them!</p>
+          </div>
+          <div>
+            <img class="img-thumbnail grid-item-2" width="50%" src="img/IMG_2243.jpg">
+          </div>
+          <div class="grid-item-3">
+            <img class="img-thumbnail" width="50%" src="img/IMG_2276.jpg">
+          </div>
+          <div class="grid-item-4">
+            <h2 style="padding: 30px">My Vision</h2>
+            <p>I want people to:
+
+              Know the Word of God      
+              Walk in purpose                 
+              Live out the Great Commission
+              Actively disciple others
+              I am passionate about seeing people come into the knowledge of who Jesus is. Knowing that the Bible is Infallible, Inerrant and Inspired by God, it is my desire that people would have an intimate understanding and passion for scripture. In a world where so many people have opinions, we as believers have an opportunity to infiltrate this world with the truth that all of creations heart longs for. While others may see the continued destruction of our world, I see it as an opportunity for the gospel to expand at a rapid pace. 
+              I believe that we are in a time where it’s not enough for people to just hear about Jesus, they are hungry to see, know and hear from him. 
+              </p>
+          </div>
+        </section>
+      </div>
+            
+<!-- Video Section -->
       <div class="tab-pane fade" id="v-videos" role="tabpanel" aria-labelledby="v-videos-tab">
-        <h2>Videos of me preachin' the Word of God</h2>
+        <h1 style="padding: 30px">Videos of me preachin' the Word of God</h1>
         <section id="videos">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/B0kJYqbNZSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/_L8YWRl-YpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/j9jVM10PnnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/s59PWydz6u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s59PWydz6u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+          <h2><a style="color: white; text-decoration: none" href="https://www.youtube.com/channel/UCdl4H0cnD4WcBB9YpSOJa7w/videos" target="_blank">Click here for more...</a></h2>
         </section>
       </div>
-      <!-- Skills Progress Bars -->
+
+  <!-- Skills Progress Bars -->
       <div class="tab-pane fade" id="v-skills" role="tabpanel" aria-labelledby="v-skills-tab"> 
         <h2>Skills</h2>
         <section id="skills">
@@ -49,38 +80,39 @@
           </div>
         </section>
       </div>
-      <!-- Contact Form -->
+
+  <!-- Contact Form -->
       <div class="tab-pane fade" id="v-contact" role="tabpanel" aria-labelledby="v-contact-tab">
-        <h2> Holla @ ya Boy </h2>
+        <h1 style="padding: 30px"> Holla @ ya Boy </h1>
         <section class="contact-wrap">
-          <form action="" class="contact-form row">
-            <div class="col-sm-6">
+          <form action="" class="contact-form">
+            <div class="col-sm-12">
               <div class="input-block">
-                <label for="">First Name</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="input-block">
-                <label for="">Last Name</label>
+                <label for="FirstName">First Name</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="col-sm-12">
               <div class="input-block">
-                <label for="">Email</label>
+                <label for="LastName">Last Name</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="col-sm-12">
               <div class="input-block">
-                <label for="">Message Subject</label>
+                <label for="Email">Email</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="input-block">
+                <label for="Subject">Message Subject</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="col-sm-12">
               <div class="input-block textarea">
-                <label for="">Drop your message here</label>
+                <label for="Message">Drop your message here</label>
                 <textarea rows="3" type="text" class="form-control"></textarea>
               </div>
             </div>
@@ -92,9 +124,6 @@
       </div>
     </div>
   </div>
-
-
-
 
 <script type="text/javascript" src="bootstrap.min.js"></script>
 </body>
