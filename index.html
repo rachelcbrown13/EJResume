@@ -5,55 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EJ Brown</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P|Permanent+Marker">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P|Permanent+Marker|Roboto">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="node_modules/@fortawesome/fontawesome-free/css/all.min.css"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </head>
 <body>
-  <div class="d-flex align-items-start">
+  <div class="d-flex align-items-start" style="background-color: black;" height="100%">
     <div class="nav flex-column" id="v-tab" role="tablist" aria-orientation="vertical">
-      <h1>EJ Brown</h1>
-      <a class="nav-link active" id="v-home-tab" data-bs-toggle="pill" href="#v-home" role="tab" aria-controls="v-home" aria-selected="true">Home</a>
-      <a class="nav-link" id="v-about-tab" data-bs-toggle="pill" href="#v-about" role="tab" aria-controls="v-about" aria-selected="false">About</a>
-      <a class="nav-link" id="v-videos-tab" data-bs-toggle="pill" href="#v-videos" role="tab" aria-controls="v-videos" aria-selected="false">Videos</a>
-      <a class="nav-link" id="v-skills-tab" data-bs-toggle="pill" href="#v-skills" role="tab" aria-controls="v-skills" aria-selected="false">Skills</a>
-      <a class="nav-link" id="v-contact-tab" data-bs-toggle="pill" href="#v-contact" role="tab" aria-controls="v-contact" aria-selected="false">Contact</a>
+      <a href="#v-home" style="text-decoration: none"><h1>EJ Brown</h1></a>
+      <a class="nav-link active" id="v-home-tab" data-bs-toggle="pill" href="#v-home" role="tab" aria-controls="v-home" aria-selected="true"><i class="fas fa-home fa-sm"></i>  Home</a>
+      <a class="nav-link" id="v-about-tab" data-bs-toggle="pill" href="#v-about" role="tab" aria-controls="v-about" aria-selected="false"><i class="fas fa-user fa-sm"></i>  About</a>
+      <a class="nav-link" id="v-videos-tab" data-bs-toggle="pill" href="#v-videos" role="tab" aria-controls="v-videos" aria-selected="false"><i class="fas fa-video fa-sm"></i>  Videos</a>
+      <a class="nav-link" id="v-skills-tab" data-bs-toggle="pill" href="#v-skills" role="tab" aria-controls="v-skills" aria-selected="false"><i class="fas fa-sliders-h fa-sm"></i>  Skills</a>
+      <a class="nav-link" id="v-contact-tab" data-bs-toggle="pill" href="#v-contact" role="tab" aria-controls="v-contact" aria-selected="false"><i class="fas fa-phone-alt fa-sm"></i>  Contact</a>
     </div>
     <div class="tab-content" id="v-tabContent">
+
 <!-- Home -->
       <div class="tab-pane fade show active" id="v-home" role="tabpanel" aria-labelledby="v-home-tab">
         <video autoplay muted loop id="HomeVideo">
           <source src="HomeVideo.mov" type="video/mp4">
         </video>
       </div>
+
 <!-- About -->
       <div class="tab-pane fade" id="v-about" role="tabpanel" aria-labelledby="v-about-tab">
+        <h1 style="padding:30px">About Me</h1>
         <section class="grid-container">
           <div class="grid-item-1">
             <h2>Who am I?</h2>
             <p>Not growing up in a Christian home, I was unaware of the everlasting impact Jesus Christ could have on my life. I have a passion to teach people to be leaders and not be ashamed of who God created them to be. I am of the belief that my life is ministry; I aspire to disciple and demonstrate the love of God through my interactions with the ones around me. When I go out to eat with my wife, playing recreational sports or working out at the gym, I am constantly thinking of how the Lord is trying to reach someone. I have a desire for people to know who their creator is and how much He truly desires and loves them!</p>
           </div>
-          <div>
-            <img class="img-thumbnail grid-item-2" width="50%" src="img/IMG_2243.jpg">
-          </div>
-          <div class="grid-item-3">
-            <img class="img-thumbnail" width="50%" src="img/IMG_2276.jpg">
-          </div>
+          <img class="img-thumbnail grid-item-2" width="75%" src="img/IMG_2276.jpg">
+          <img class="img-thumbnail grid-item-3" width="75%" src="img/IMG_2243.jpg">
           <div class="grid-item-4">
             <h2 style="padding: 30px">My Vision</h2>
-            <p>I want people to:
-
-              Know the Word of God      
-              Walk in purpose                 
-              Live out the Great Commission
-              Actively disciple others
+            <p>I want people to:</p>
+              <ul>
+                <li>Know the Word of God</li>    
+                <li>Walk in purpose</li>       
+                <li>Live out the Great Commission</li>
+                <li>Actively disciple others</li>
+              </ul>
+            <p>
               I am passionate about seeing people come into the knowledge of who Jesus is. Knowing that the Bible is Infallible, Inerrant and Inspired by God, it is my desire that people would have an intimate understanding and passion for scripture. In a world where so many people have opinions, we as believers have an opportunity to infiltrate this world with the truth that all of creations heart longs for. While others may see the continued destruction of our world, I see it as an opportunity for the gospel to expand at a rapid pace. 
               I believe that we are in a time where it’s not enough for people to just hear about Jesus, they are hungry to see, know and hear from him. 
-              </p>
+            </p>
           </div>
         </section>
       </div>
             
-<!-- Video Section -->
+<!-- Videos -->
       <div class="tab-pane fade" id="v-videos" role="tabpanel" aria-labelledby="v-videos-tab">
         <h1 style="padding: 30px">Videos of me preachin' the Word of God</h1>
         <section id="videos">
@@ -67,7 +70,7 @@
 
   <!-- Skills Progress Bars -->
       <div class="tab-pane fade" id="v-skills" role="tabpanel" aria-labelledby="v-skills-tab"> 
-        <h2>Skills</h2>
+        <h1 style="padding:30px">Skills</h1>
         <section id="skills">
           <div class="progress">
             <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Preachin'</div>
@@ -127,4 +130,7 @@
 
 <script type="text/javascript" src="bootstrap.min.js"></script>
 </body>
+<footer>
+  <p style="background-color: black; color: white; text-align:center;">Created & Developed by @rachelchardea</p>
+</footer>
 </html>
