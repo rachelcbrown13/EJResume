@@ -11,7 +11,8 @@
     <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </head>
 <body>
-  <div class="d-flex align-items-start" style="background-color: black;" height="100%">
+  <div class="d-flex align-items-start" height="100%">
+    <!-- navbar -->
     <div class="nav flex-column nav-pills" id="v-tab" role="tablist" aria-orientation="vertical">
       <a href="#v-home" style="text-decoration: none"><h1>EJ Brown</h1></a>
       <a class="nav-link active" id="v-home-tab" data-bs-toggle="pill" href="#v-home" role="tab" aria-controls="v-home" aria-selected="true"><i class="fas fa-home fa-sm"></i>  Home</a>
@@ -20,8 +21,8 @@
       <a class="nav-link" id="v-videos-tab" data-bs-toggle="pill" href="#v-donate" role="tab" aria-controls="v-videos" aria-selected="false"><i class="fas fa-donate"></i>   Donate</a>
       <a class="nav-link" id="v-contact-tab" data-bs-toggle="pill" href="#v-contact" role="tab" aria-controls="v-contact" aria-selected="false"><i class="fas fa-phone-alt fa-sm"></i>  Contact</a>
     </div>
+<!-- Navbar Content -->
     <div class="tab-content" id="v-tabContent">
-
 <!-- Home -->
       <div class="tab-pane fade show active" id="v-home" role="tabpanel" aria-labelledby="v-home-tab">
         <video autoplay muted loop id="HomeVideo">
@@ -64,7 +65,7 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/_L8YWRl-YpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/j9jVM10PnnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/s59PWydz6u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
-          <h2><a style="color: white; text-decoration: none" href="https://www.youtube.com/channel/UCdl4H0cnD4WcBB9YpSOJa7w/videos" target="_blank">Click here for more...</a></h2>
+          <h2><a class="moreVideos" style="color: white; text-decoration: none" href="https://www.youtube.com/channel/UCdl4H0cnD4WcBB9YpSOJa7w/videos" target="_blank">Click here for more...</a></h2>
         </section>
       </div>
 
@@ -114,6 +115,7 @@
 
 <script type="text/javascript" src="bootstrap.min.js"></script>
 <script async src="//www.instagram.com/embed.js"></script>
+<script src="app.js"></script>
 </body>
 <footer>
   <p style="background-color: black; color: white; text-align:center;">Created & Developed by @rachelchardea</p>
